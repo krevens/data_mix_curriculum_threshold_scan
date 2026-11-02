@@ -1,11 +1,11 @@
-# costopt_jd446
+# data_mix_curriculum_threshold_scan
 
 **给推理成本优化顾问·训练数据配比与课程学习打分并按阈值给出通过与否。**
 
-`costopt_jd446` —— 为每一项打分并与阈值比较，明确标出通过、边界与不通过三档
+`data_mix_curriculum_threshold_scan` —— 为每一项打分并与阈值比较，明确标出通过、边界与不通过三档
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`costopt_jd446.py` 拷走就能用
+- 单文件，`data_mix_curriculum_threshold_scan.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install krevens-costopt_jd446
+pip install krevens-data_mix_curriculum_threshold_scan
 ```
 
 装完直接用命令名调用：
 
 ```bash
-costopt_jd446 --help
+data_mix_curriculum_threshold_scan --help
 ```
 
-也可以不用安装，直接把 `costopt_jd446.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `data_mix_curriculum_threshold_scan.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ costopt_jd446 --help
 ## 用法
 
 ```bash
-python costopt_jd446.py --file input.txt
-python costopt_jd446.py --text "示例内容"
-python costopt_jd446.py --file input.txt --json
+python data_mix_curriculum_threshold_scan.py --file input.txt
+python data_mix_curriculum_threshold_scan.py --text "示例内容"
+python data_mix_curriculum_threshold_scan.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python costopt_jd446.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_costopt_jd446.py
+python test_data_mix_curriculum_threshold_scan.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_costopt_jd446.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/krevens/costopt_jd446>
+- GitHub 仓库：<https://github.com/krevens/data_mix_curriculum_threshold_scan>
 
 ---
 
@@ -79,7 +79,7 @@ python test_costopt_jd446.py
 krevens 做推理成本优化顾问·训练数据配比与课程学习相关的问题，方向对标智谱AI的实习推理成本优化顾问岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://krevens.github.io>
-- 仓库：<https://github.com/krevens/costopt_jd446>
+- 仓库：<https://github.com/krevens/data_mix_curriculum_threshold_scan>
 
 ## 许可
 
